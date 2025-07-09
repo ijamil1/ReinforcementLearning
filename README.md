@@ -12,3 +12,5 @@ REINFORCE_with_Function-Approximated_Baseline: implemented the REINFORCE algorit
 PPO: implelmented the Proximal Policy Optimization algorithm on the BlackJack env
 
 Unsloth_Qwen2_5_(3B)_GRPO: In this notebook, I followed Unsloth's tutorial of fine tuning a base LLM with GRPO using the GSM8K dataset; 1 custom tweak I made is that I added a reward function that gives a .001 reward for each character in between the reasoning tags up to a maximum of 100. The rationale behind this was to incentivize longer reasoning chains of thought. In hindsight, I could have increeased the maximum quite a bit because 100 characters is not much. It was pretty interesting to see that after the default of 250 training steps that the model was pushed to reason even though in the example that was run the answer is still wrong. Also, I don't know why the notebook is not rendering properly in GitHub. 
+
+LlamaGym_BlackJack: will be using LlamaGym library and their scaffold code to fine-tune (context is Blackjack) an LLM locally with PPO
